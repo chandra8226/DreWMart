@@ -28,7 +28,7 @@ async function main() {
   console.log('Owner Account', deployer.address);
   try {
     const { data } = await axios.post(
-      'http://localhost:5000/api/v1/admin/add-admin',
+      'https://drewmart-backend-production.up.railway.app/api/v1/admin/add-admin',
       { name: 'Pinaki Bhattacharjee', walletAddress: deployer.address.toLowerCase() },
       { headers: { 'Content-Type': 'application/json', Authorization: 'Bearer token' } }
     );

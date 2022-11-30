@@ -11,7 +11,8 @@
     "line-all": "eslint src/**/*.tsx",
     "lint-fix": "eslint src/**/*.tsx --fix",
     "hardhat:node": "npx hardhat node",
-    "hardhat:deploy": "npx hardhat run --network localhost scripts/deploy.js"
+    "hardhat:deploy": "npx hardhat run --network localhost scripts/deploy.js",
+    "hardhat:deploy-prod": "npx hardhat run --network goerli scripts/deploy.js"
   },
   "dependencies": {
     "@faker-js/faker": "^7.6.0",
